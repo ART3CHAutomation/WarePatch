@@ -11,12 +11,12 @@ gantt
     %% (`excludes` accepts specific dates in YYYY-MM-DD format, days of the week ("sunday") or "weekends", but not the word "weekdays".)
 
     section Inicio
-    Configuración de horarios disponibles trabajo APM            :done,    des1, 2022-08-20, 7d
-    Definición del nombre de la organización                     :done,    des2, 2022-08-20, 7d
-    Discusión del funcionamiento de un warehouse típico          :done,    des3, 2022-08-20, 7d
+    Configuración de horarios disponibles trabajo APM            :done,    des1, 2022-08-20, 14d
+    Definición del nombre de la organización                     :done,    des2, 2022-08-20, 14d
+    Discusión del funcionamiento de un warehouse típico          :done,    des3, 2022-08-20, 14d
     
-    Definición de la EDT                                         :done, des4,   after des1, 7d
-    Definición de los roles de cada integrante                   :crit, done, des5,   after des1, 7d
+    Definición de la EDT                                         :done, des4,   2022-08-27, 7d
+    Definición de roles en el grupo                   :crit, done, des5,   2022-08-27, 7d
     
     Definición del grado de automatización final                  :done, des6, after des4, 14d
     Exploración inicial de los programas a utilizar en el proyecto    :crit, done, des7, after des4, 14d
