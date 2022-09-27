@@ -27,7 +27,7 @@ gantt
     Simulación de propuesta sin automatizar en Tecnomatix              :crit, done, des11, after des10, 14d
     Elaboración de Layout de propuesta automatizada              :crit, done, des12, after des10, 14d
     Diseño del Layout de la celda robotizada encargada del paletizado       :crit, done, des13, after des10, 14d
-    Definición de de lista de elementos y parámetros de la celda robotizada  :done, des14, after des10, 14d
+    Definición de lista de elementos y parámetros de la celda robotizada  :done, des14, after des10, 14d
     Modelado CAD del Layout de la propuesta automatizada en NX            :crit, done, des15, after des6, 14d
     Evaluación OEE para caso base                                :done, des16, after des6, 14d
     Elaboración de informe de diseño de celda robotizada         :crit, done, des17, after des6, 14d
