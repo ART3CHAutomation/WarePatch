@@ -39697,6 +39697,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-header .u-btn-1 {
   background-image: none;
+  font-size: 2.25rem;
   padding: 0;
 }
 
@@ -39739,10 +39740,6 @@ a.u-link.u-text-hover-grey-90:hover {
   .u-header .u-text-1 {
     width: auto;
     margin-right: 806px;
-  }
-
-  .u-header .u-btn-1 {
-    font-size: 2.25rem;
   }
 
   .u-header .u-menu-1 {
