@@ -1,6 +1,5 @@
  .u-section-1 {
   background-image: linear-gradient(0deg, rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("images/wp10989578.webp");
-  background-position: 50% 50%;
 }
 
 .u-section-1 .u-sheet-1 {
@@ -23,6 +22,10 @@
 }
 
 @media (max-width: 1199px) {
+   .u-section-1 {
+    background-position: 50% 50%;
+  }
+
   .u-section-1 .u-sheet-1 {
     min-height: 400px;
   }
@@ -451,7 +454,7 @@
 }
 
 .u-section-4 .u-sheet-1 {
-  min-height: 861px;
+  min-height: 50vw;
 }
 
 .u-section-4 .u-text-1 {
@@ -463,34 +466,15 @@
 .u-section-4 .u-custom-html-1 {
   margin-bottom: 0;
   height: auto;
-  min-height: 19px;
+  min-height: 707px;
   margin-top: 42px;
-  width: 1140px;
 }
 
 .u-section-4 .u-custom-html-2 {
-  margin-top: -3px;
-  margin-bottom: 42px;
+  margin-top: 0;
+  margin-bottom: 38px;
   height: auto;
   min-height: 65px;
-}
-
-@media (max-width: 1199px) {
-  .u-section-4 .u-custom-html-1 {
-    width: 940px;
-  }
-}
-
-@media (max-width: 991px) {
-  .u-section-4 .u-custom-html-1 {
-    width: 720px;
-  }
-}
-
-@media (max-width: 767px) {
-  .u-section-4 .u-custom-html-1 {
-    width: 540px;
-  }
 }
 
 @media (max-width: 575px) {
@@ -505,7 +489,6 @@
 
   .u-section-4 .u-custom-html-1 {
     min-height: 607px;
-    width: auto;
   }
 
   .u-section-4 .u-custom-html-2 {
