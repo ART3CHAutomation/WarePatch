@@ -13,16 +13,7 @@
   width: 770px;
   font-weight: normal;
   font-family: Oswald, sans-serif;
-  margin: 405px auto 0;
-}
-
-.u-section-1 .u-btn-1 {
-  border-style: solid;
-  align-self: center;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 14px auto 60px;
-  padding: 10px 57px 10px 55px;
+  margin: 405px auto 60px;
 }
 
 @media (max-width: 1199px) {
@@ -52,10 +43,6 @@
     width: 540px;
     margin-top: 90px;
   }
-
-  .u-section-1 .u-btn-1 {
-    margin-top: 31px;
-  }
 }
 
 @media (max-width: 575px) {
@@ -66,11 +53,7 @@
   .u-section-1 .u-text-1 {
     font-size: 2.125rem;
     width: 340px;
-    margin-top: 225px;
-  }
-
-  .u-section-1 .u-btn-1 {
-    margin-top: 209px;
+    margin-top: 230px;
   }
 } .u-section-2 {
   background-image: url("images/ab75606b-93c5-1201-55d8-c6f6c258b9f6.jpg");
