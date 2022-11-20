@@ -1,0 +1,143 @@
+ .u-section-1 {
+  min-height: 894px;
+}
+
+.u-section-1 .u-image-1 {
+  height: 187px;
+  margin-top: 2px;
+  margin-bottom: 0;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 6rem;
+  font-weight: 700;
+  margin: -173px auto 0;
+}
+
+.u-section-1 .u-image-2 {
+  height: 706px;
+  margin-top: 67px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1199px) {
+   .u-section-1 {
+    min-height: 790px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-1 {
+    font-size: 1.5rem;
+  }
+} .u-section-2 {
+  background-image: url("images/f.jpg");
+}
+
+.u-section-2 .u-sheet-1 {
+  min-height: 682px;
+}
+
+.u-section-2 .u-text-1 {
+  font-size: 3rem;
+  font-weight: 700;
+  background-image: none;
+  margin: 28px auto 0 58px;
+}
+
+.u-section-2 .u-text-2 {
+  font-size: 1.125rem;
+  margin: 70px 1px 60px 40px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 562px;
+  }
+
+  .u-section-2 .u-text-2 {
+    margin-right: 0;
+    margin-left: 133px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 430px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 323px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-2 .u-sheet-1 {
+    min-height: 203px;
+  }
+
+  .u-section-2 .u-text-1 {
+    font-size: 1.5rem;
+  }
+
+  .u-section-2 .u-text-2 {
+    margin-left: 84px;
+  }
+} .u-section-3 {
+  background-image: url("images/f.jpg");
+}
+
+.u-section-3 .u-sheet-1 {
+  min-height: 682px;
+}
+
+.u-section-3 .u-text-1 {
+  font-size: 3rem;
+  font-weight: 700;
+  background-image: none;
+  margin: 28px auto 0 58px;
+}
+
+.u-section-3 .u-text-2 {
+  font-size: 1.125rem;
+  margin: 70px 1px 60px 40px;
+}
+
+@media (max-width: 1199px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 562px;
+  }
+
+  .u-section-3 .u-text-2 {
+    margin-right: 0;
+    margin-left: 133px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 430px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 323px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-3 .u-sheet-1 {
+    min-height: 203px;
+  }
+
+  .u-section-3 .u-text-1 {
+    font-size: 1.5rem;
+  }
+
+  .u-section-3 .u-text-2 {
+    margin-left: 84px;
+  }
+}
