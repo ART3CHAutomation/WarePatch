@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="es-CO"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Controlador</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="Controlador.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 5.0.7, nicepage.com">
+    <link rel="icon" href="images/favicon2.png">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700">
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "WarePatch",
+		"logo": "images/logo-CopyofLogosimbolo.drawio.png"
+}</script>
+    <meta name="theme-color" content="#333333">
+    <meta property="og:title" content="Controlador">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta name="theme-color" content="#333333"></head>
+  <body class="u-body u-xl-mode" data-lang="es"><header class="u-clearfix u-custom-color-8 u-header u-sticky u-sticky-4140 u-header" id="sec-a3d4" data-animation-name="" data-animation-duration="0" data-animation-delay="0" data-animation-direction=""><style class="u-sticky-style" data-style-id="4140">.u-sticky-fixed.u-sticky-4140:before, .u-body.u-sticky-fixed .u-sticky-4140:before {
+borders: top right bottom left !important
+}</style><style class="u-sticky-style" data-style-id="4140">.u-sticky-fixed.u-sticky-4140:before, .u-body.u-sticky-fixed .u-sticky-4140:before {
+borders: top right bottom left !important
+}</style><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="https://art3chautomation.github.io" class="u-image u-logo u-image-1" data-image-width="1080" data-image-height="1080" title="art3ch" target="_blank">
+          <img src="images/logo-CopyofLogosimbolo.drawio.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <h3 class="u-align-center u-custom-font u-font-oswald u-headline u-text u-text-1" data-lang-en="<a class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1&quot; href=&quot;1070717720&quot; data-lang-en=&quot;{&amp;quot;content&amp;quot;:&amp;quot;ART3CH&amp;quot;,&amp;quot;href&amp;quot;:&amp;quot;1070717720&amp;quot;}&quot; style=&quot;background-image: none; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; font-size: 2.25rem&quot;>ART3CH</a>" data-lang-es="<a class=&quot;u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-block-control u-btn-1&quot; href=&quot;1070717720&quot; data-lang-en=&quot;{&amp;quot;content&amp;quot;:&amp;quot;ART3CH&amp;quot;,&amp;quot;href&amp;quot;:&amp;quot;1070717720&amp;quot;}&quot; style=&quot;background-image: none; padding-top: 0px; padding-bottom: 0px; padding-left: 0px; padding-right: 0px; font-size: 2.25rem&quot; data-block=&quot;3&quot;>ART3CH</a>">
+          <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1" href="Home.html" data-lang-en="{&quot;content&quot;:&quot;ART3CH&quot;,&quot;href&quot;:&quot;1070717720&quot;}">ART3CH</a>
+        </h3>
+        <nav class="u-menu u-menu-dropdown u-menu-open-right u-offcanvas u-menu-1" data-responsive-from="MD">
+          <div class="menu-collapse">
+            <a class="u-button-style u-custom-text-hover-color u-nav-link" href="#" data-lang-en="{&quot;content&quot;:&quot;<svg class=\&quot;u-svg-link\&quot; viewBox=\&quot;0 0 24 24\&quot;><use xmlns:xlink=\&quot;http://www.w3.org/1999/xlink\&quot; xlink:href=\&quot;#menu-hamburger\&quot;></use></svg><svg class=\&quot;u-svg-content\&quot; version=\&quot;1.1\&quot; id=\&quot;menu-hamburger\&quot; viewBox=\&quot;0 0 16 16\&quot; x=\&quot;0px\&quot; y=\&quot;0px\&quot; xmlns:xlink=\&quot;http://www.w3.org/1999/xlink\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot;>    <g>        <rect y=\&quot;1\&quot; width=\&quot;16\&quot; height=\&quot;2\&quot;></rect>        <rect y=\&quot;7\&quot; width=\&quot;16\&quot; height=\&quot;2\&quot;></rect>        <rect y=\&quot;13\&quot; width=\&quot;16\&quot; height=\&quot;2\&quot;></rect>    </g></svg>&quot;,&quot;href&quot;:&quot;#&quot;}" data-lang-es="{&quot;content&quot;:&quot;<svg class=\&quot;u-svg-link\&quot; viewBox=\&quot;0 0 24 24\&quot;><use xmlns:xlink=\&quot;http://www.w3.org/1999/xlink\&quot; xlink:href=\&quot;#menu-hamburger\&quot;></use></svg><svg class=\&quot;u-svg-content\&quot; version=\&quot;1.1\&quot; id=\&quot;menu-hamburger\&quot; viewBox=\&quot;0 0 16 16\&quot; x=\&quot;0px\&quot; y=\&quot;0px\&quot; xmlns:xlink=\&quot;http://www.w3.org/1999/xlink\&quot; xmlns=\&quot;http://www.w3.org/2000/svg\&quot;>    <g>        <rect y=\&quot;1\&quot; width=\&quot;16\&quot; height=\&quot;2\&quot;></rect>        <rect y=\&quot;7\&quot; width=\&quot;16\&quot; height=\&quot;2\&quot;></rect>        <rect y=\&quot;13\&quot; width=\&quot;16\&quot; height=\&quot;2\&quot;></rect>    </g></svg>&quot;,&quot;href&quot;:&quot;#&quot;}">
+              <svg class="u-svg-link" viewBox="0 0 24 24"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg class="u-svg-content" version="1.1" id="menu-hamburger" viewBox="0 0 16 16" x="0px" y="0px" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-4-base" href="Home.html" data-lang-en="{&quot;content&quot;:&quot;Home&quot;,&quot;href&quot;:&quot;Home.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;Home&quot;,&quot;href&quot;:&quot;Home.html&quot;}" style="padding: 10px 12px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-4-base" data-lang-en="{&quot;content&quot;:&quot;Producto&quot;}" data-lang-es="{&quot;content&quot;:&quot;Producto&quot;}" style="padding: 10px 12px;">Producto</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="SCADA.html" data-lang-en="{&quot;content&quot;:&quot;SCADA&quot;,&quot;href&quot;:&quot;SCADA.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;SCADA&quot;,&quot;href&quot;:&quot;SCADA.html&quot;}">SCADA</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Industria40.html" data-lang-es="{&quot;content&quot;:&quot;Industria 4.0&quot;,&quot;href&quot;:&quot;Industria40.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;Industria 4.0&quot;,&quot;href&quot;:&quot;Industria40.html&quot;}">Industria 4.0</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="CeldaRobotizada.html" data-lang-en="{&quot;content&quot;:&quot;Celda Robotizada&quot;,&quot;href&quot;:&quot;CeldaRobotizada.html&quot;}">Celda Robotizada</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Evaluacion-Economica.html" data-lang-en="{&quot;content&quot;:&quot;Page 1&quot;,&quot;href&quot;:&quot;Page-1.html&quot;}">Evaluacion Economina</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Gestion-De-Produccion.html" data-lang-en="{&quot;content&quot;:&quot;Page 1&quot;,&quot;href&quot;:&quot;Page-1.html&quot;}">Gestion De Produccion</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Digital-Factory.html">Digital Factory</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="Controlador.html">Controlador</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="MES.html" data-lang-en="{&quot;content&quot;:&quot;Page 1&quot;,&quot;href&quot;:&quot;Page-1.html&quot;}">MES</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-4-base" href="ProcesoAprendizaje.html" data-lang-en="{&quot;content&quot;:&quot;Proceso de Aprendizaje&quot;,&quot;href&quot;:&quot;ProcesoAprendizaje.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;Proceso de Aprendizaje&quot;,&quot;href&quot;:&quot;ProcesoAprendizaje.html&quot;}" style="padding: 10px 12px;">Proceso de Aprendizaje</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-3"><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="ProcesoAprendizaje.html#carousel_2c91" data-lang-en="{&quot;content&quot;:&quot;Gestión de Proyecto&quot;,&quot;href&quot;:&quot;862322657#carousel_2c91&quot;}" data-lang-es="{&quot;content&quot;:&quot;Gestión de Proyecto&quot;,&quot;href&quot;:&quot;862322657#carousel_2c91&quot;}">Gestión de Proyecto</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="ProcesoAprendizaje.html#carousel_02e5" data-lang-en="{&quot;content&quot;:&quot;Trabajo colaborativo&quot;,&quot;href&quot;:&quot;862322657#carousel_02e5&quot;}" data-lang-es="{&quot;content&quot;:&quot;Trabajo colaborativo&quot;,&quot;href&quot;:&quot;862322657#carousel_02e5&quot;}">Trabajo colaborativo</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="ProcesoAprendizaje.html#carousel_173e" data-lang-en="{&quot;content&quot;:&quot;Proceso de aprendizaje&quot;,&quot;href&quot;:&quot;862322657#carousel_173e&quot;}" data-lang-es="{&quot;content&quot;:&quot;Proceso de aprendizaje&quot;,&quot;href&quot;:&quot;862322657#carousel_173e&quot;}">Proceso de aprendizaje</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-white" href="ProcesoAprendizaje.html#carousel_173e" data-lang-en="{&quot;content&quot;:&quot;Recomendaciones&quot;,&quot;href&quot;:&quot;862322657#carousel_173e&quot;}" data-lang-es="{&quot;content&quot;:&quot;Recomendaciones&quot;,&quot;href&quot;:&quot;862322657#carousel_173e&quot;}">Recomendaciones</a>
+</li></ul>
+</div>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-spacing-0 u-unstyled u-nav-4"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Home.html" data-lang-en="{&quot;content&quot;:&quot;Home&quot;,&quot;href&quot;:&quot;Home.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;Home&quot;,&quot;href&quot;:&quot;Home.html&quot;}">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" data-lang-en="{&quot;content&quot;:&quot;Producto&quot;}" data-lang-es="{&quot;content&quot;:&quot;Producto&quot;}">Producto</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-5"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="SCADA.html" data-lang-en="{&quot;content&quot;:&quot;SCADA&quot;,&quot;href&quot;:&quot;SCADA.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;SCADA&quot;,&quot;href&quot;:&quot;SCADA.html&quot;}">SCADA</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Industria40.html" data-lang-es="{&quot;content&quot;:&quot;Industria 4.0&quot;,&quot;href&quot;:&quot;Industria40.html&quot;}" data-lang-en="{&quot;content&quot;:&quot;Industria 4.0&quot;,&quot;href&quot;:&quot;Industria40.html&quot;}">Industria 4.0</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="CeldaRobotizada.html" data-lang-en="{&quot;content&quot;:&quot;Celda Robotizada&quot;,&quot;href&quot;:&quot;CeldaRobotizada.html&quot;}">Celda Robotizada</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Evaluacion-Economica.html" data-lang-en="{&quot;content&quot;:&quot;Page 1&quot;,&quot;href&quot;:&quot;Page-1.html&quot;}">Evaluacion Economina</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Gestion-De-Produccion.html" data-lang-en="{&quot;content&quot;:&quot;Page 1&quot;,&quot;href&quot;:&quot;Page-1.html&quot;}">Gestion De Produccion</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Digital-Factory.html">Digital Factory</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Controlador.html">Controlador</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="MES.html" data-lang-en="{&quot;content&quot;:&quot;Page 1&quot;,&quot;href&quot;:&quot;Page-1.html&quot;}">MES</a>
+</li></ul>
+</div>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="ProcesoAprendizaje.html" data-lang-en="{&quot;content&quot;:&quot;Proceso de Aprendizaje&quot;,&quot;href&quot;:&quot;ProcesoAprendizaje.html&quot;}" data-lang-es="{&quot;content&quot;:&quot;Proceso de Aprendizaje&quot;,&quot;href&quot;:&quot;ProcesoAprendizaje.html&quot;}">Proceso de Aprendizaje</a><div class="u-nav-popup"><ul class="u-h-spacing-20 u-nav u-unstyled u-v-spacing-10 u-nav-6"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="ProcesoAprendizaje.html#carousel_2c91" data-lang-en="{&quot;content&quot;:&quot;Gestión de Proyecto&quot;,&quot;href&quot;:&quot;862322657#carousel_2c91&quot;}" data-lang-es="{&quot;content&quot;:&quot;Gestión de Proyecto&quot;,&quot;href&quot;:&quot;862322657#carousel_2c91&quot;}">Gestión de Proyecto</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="ProcesoAprendizaje.html#carousel_02e5" data-lang-en="{&quot;content&quot;:&quot;Trabajo colaborativo&quot;,&quot;href&quot;:&quot;862322657#carousel_02e5&quot;}" data-lang-es="{&quot;content&quot;:&quot;Trabajo colaborativo&quot;,&quot;href&quot;:&quot;862322657#carousel_02e5&quot;}">Trabajo colaborativo</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="ProcesoAprendizaje.html#carousel_173e" data-lang-en="{&quot;content&quot;:&quot;Proceso de aprendizaje&quot;,&quot;href&quot;:&quot;862322657#carousel_173e&quot;}" data-lang-es="{&quot;content&quot;:&quot;Proceso de aprendizaje&quot;,&quot;href&quot;:&quot;862322657#carousel_173e&quot;}">Proceso de aprendizaje</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="ProcesoAprendizaje.html#carousel_173e" data-lang-en="{&quot;content&quot;:&quot;Recomendaciones&quot;,&quot;href&quot;:&quot;862322657#carousel_173e&quot;}" data-lang-es="{&quot;content&quot;:&quot;Recomendaciones&quot;,&quot;href&quot;:&quot;862322657#carousel_173e&quot;}">Recomendaciones</a>
+</li></ul>
+</div>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-55"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-clearfix u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-section-1" id="sec-e2e2">
+      <h2 class="u-text u-text-default u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000">Controlador</h2>
+      <img class="u-expanded-width u-image u-image-1" src="images/Industrial-Automation.jpg" data-image-width="769" data-image-height="445" data-animation-name="customAnimationIn" data-animation-duration="1000">
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-8321">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="">
+          <h2 style="text-align: center;">Dimensionamiento</h2>
+          <p style="text-align: justify;">
+            <span style="font-size: 1.125rem;">&nbsp;<span style="font-size: 1.25rem;">Los requerimientos relevante del proyecto para la seleeción del controlador apropiado son los siguientes:</span>
+            </span>
+          </p>
+          <h3 style="text-align: left;">Consideraciones generales:</h3>
+          <ul>
+            <li>
+              <h3 style="text-align: left;">
+                <span style="font-size: 1.25rem;">El almacén es una aplicación pequeña con pocos puntos I/O y con control de movimiento de pocos ejes.</span>
+              </h3>
+            </li>
+            <li style="text-align: left;">
+              <span style="font-size: 1.25rem;">Un control de movimiento integrado es suficiente. No se necesita otro hardware especializado</span>
+            </li>
+          </ul>
+          <h3 style="text-align: left;">Señales análogas:</h3>
+          <p style="text-align: left;">
+            <span style="font-size: 1.25rem;">Serán 3 señales análogas de salida para hacer control de los 3 ejes del gantry.</span>
+          </p>
+          <h3 style="text-align: left;">Señales digitales:</h3>
+          <p style="text-align: justify;">
+            <span style="font-size: 1.25rem;">
+              <span class="u-text-body-color">En su mayoría, las señales serán de naruraleza digital para:</span>
+            </span>
+          </p>
+          <ul>
+            <li style="text-align: justify;">
+              <span style="font-size: 1.25rem;">
+                <span class="u-text-body-color">Recibir señales de sensores de la banda transportadora de ingreso de paquetes</span>
+              </span>
+            </li>
+            <li style="text-align: justify;">
+              <span style="font-size: 1.25rem;">
+                <span class="u-text-body-color">Controlar el motor de la banda transportadora de ingreso de paquetes</span>
+              </span>
+            </li>
+            <li style="text-align: justify;">
+              <span style="font-size: 1.25rem;">
+                <span class="u-text-body-color">Realizar el tagging a cada paquete</span>
+              </span>
+            </li>
+            <li style="text-align: justify;">
+              <span style="font-size: 1.25rem;">
+                <span class="u-text-body-color">Recibir señales de sensores de final de carrera del gantry así como le a posición de cada eje.</span>
+              </span>
+            </li>
+            <li style="text-align: justify;">
+              <span style="font-size: 1.25rem;">
+                <span class="u-text-body-color">Envío de información de paquetes a la celda robotizada&nbsp;</span>
+              </span>
+            </li>
+          </ul>
+          <h3 style="text-align: left;">Comunicaciones:</h3>
+          <p style="text-align: left;">
+            <span style="font-size: 1.25rem;">Se comunicará con un PC local el cuál tendrá un SCADA Local, por lo que esta comunicación se hara mediante Ethernet/IP.</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-3f83">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="">
+          <h2>Selección</h2>
+          <p style="text-align: left;">
+            <span style="font-size: 1.25rem;">De acuerdo con el anterior dimensionamiento, solo se necesita un controlador industrial. Haciendo un análisis de la familia de productos marca AllenBradley, se escogió la familia de CompactLogix 5380, debido a las siguientes características:</span>
+          </p>
+          <ul>
+            <li style="text-align: left; font-size: 1.25rem;">Ideal para aplicaciones pequeñas y grandes que requieran pocas señales IO y pocas señales de movimiento de ejes.</li>
+            <li style="text-align: left; font-size: 1.25rem;">Posibilidad de ser integrado en un sistema PlantPAx, en caso de necesitarse escalabilidad.</li>
+            <li style="text-align: left; font-size: 1.25rem;">Un puerto embebido de Ethernet/IP de 1Gb de velocidad</li>
+          </ul>
+          <p style="text-align: left;">
+            <span style="font-size: 1.25rem;">Haciendo una selección más detallada, la cantidad de señales para control de movimiento se vuelve definitiva a la hora de escoger una referencia. Se escogió el CompactLogix 5069-L330ERM, el cual tiene las siguientes características:</span>
+          </p>
+          <ul>
+            <li style="text-align: justify; font-size: 1.25rem;">Memoria de 3M</li>
+            <li style="text-align: justify; font-size: 1.25rem;">Soporta hasta 31 módulos de IO</li>
+            <li style="text-align: justify;">
+              <span style="font-size: 1.25rem;">
+                <span class="u-text-body-color">Capaz de controlar hasta 16 ejes de movimiento</span>
+              </span>
+            </li>
+            <li style="text-align: justify; font-size: 1.25rem;">Puerto Ethernet/IP capaz de soportar hasta 60 dispositivos</li>
+          </ul>
+        </div>
+        <img class="u-image u-image-contain u-image-default u-image-1" src="images/16x9-5069-l340erm-compactlogix-5380-controller.2399.jpg" alt="" data-image-width="2399" data-image-height="1350">
+      </div>
+    </section>
+    <section class="u-align-center u-clearfix u-section-4" id="sec-5772">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1" data-animation-name="customAnimationIn" data-animation-duration="1000" data-animation-direction="">
+          <h2>Desglose del problema de control secuencial</h2>
+          <p style="text-align: left;">
+            <span style="font-size: 1.25rem;">El problema de control secuencial se puede dividir en 2 subproblemas:</span>
+          </p>
+          <ul>
+            <li style="text-align: left; font-size: 1.25rem;">Control de la banda transportadora de ingreso</li>
+            <li style="text-align: left; font-size: 1.25rem;">Control del gantry y administración del rack del almacén.</li>
+          </ul>
+          <h3 style="text-align: left;">Control de la banda transportadora de ingreso:</h3>
+          <p style="text-align: left;">
+            <span style="font-size: 1.25rem;">La banda transportadora se moverá siempre y cuando no esté vacía pero no haya un paquete al final. Como no depende de otra rutina, y genera las condiciones para el otro subproblema, se determinó programarlo como rutinas independientes en Ladder y ejecutadas por la rutina principal (MainRoutine).</span>
+          </p>
+          <p style="text-align: left;">
+            <span style="font-size: 1.25rem;">Esta lógica consta de dos rutinas:</span>
+          </p>
+          <ul>
+            <li style="text-align: left;">
+              <span style="font-size: 1.25rem;">(CnvPackageCount) Sub-rutina que se encarga de llevar el conteo de los paquetes que ingresa y salen etiquetados de la banda. Así como de activar flags cuando la banda está llena o vacía.</span>
+            </li>
+            <li style="text-align: left;">
+              <span style="font-size: 1.25rem;">(ConveyorMove) Sub-rutina que se encarga de mover la banda dependiendo de las condiciones de la misma y de la regla de movimiento, mecionada anteriormente.</span>
+            </li>
+          </ul>
+          <h4 style="text-align: left;">CnvPackageCount:</h4>
+          <p style="text-align: left;">
+            <img src="images/image2.png" width="552" align="center" style="width: 552px;" class="fr-dib fr-fic">
+          </p>
+          <h4 style="text-align: left;">ConveyorMove:</h4>
+          <p style="text-align: left;">
+            <img src="images/image5.png" width="552" align="center" style="width: 552px;" class="fr-dib fr-fic">
+          </p>
+          <h3 style="text-align: left;">Control del gantry y administración del almacén:</h3>
+          <p style="text-align: left;">
+            <span style="font-size: 1.25rem;">El gantry estará atendiendo dos bandas transportadoras, una que suple paquetes al rack y otra que lleva paquetes del rack a la celda robotizada. Además, será gobernado por los estados y flags que actualiza una rutina similar a CnvPackageCount.&nbsp;</span>
+          </p>
+          <p style="text-align: left;">
+            <span style="font-size: 1.25rem;">Esta lógica consta de dos rutinas:</span>
+          </p>
+          <ul>
+            <li style="text-align: left; font-size: 1.25rem;">(Management) Sub-rutina que se encarga del control del gantry, y decide si reabastecer el rack o sacar paquetes para llevar a la celda robotizada. También contiene lógica que deduce las posiciones vacías así como la ubicación del paquete por sacar.</li>
+            <li style="text-align: left; font-size: 1.25rem;">(RackPackageCount) Sub-rutina que se encarga de llevar el conteo de los paquetes que ingresan y salen del rack. Así como de activar flags cuando el rack está lleno o que algún nivel del rack solo tenga 5 paquetes o menos.</li>
+          </ul>
+          <h4 style="text-align: left;">Management:</h4>
+          <p>
+            <img src="images/ManagementRoutine.png" width="552" style="width: 789px;" class="fr-dib fr-fic">
+          </p>
+          <h4 style="text-align: left;">RackPackageCount:&nbsp;</h4>
+          <p>
+            <img src="images/image12.png" width="552" align="center" style="width: 552px;" class="fr-dib fr-fic">
+          </p>
+          <p>
+            <img src="images/image24.png" width="552" align="center" style="width: 552px;" class="fr-dib fr-fic">
+          </p>
+          <p>
+            <img src="images/image25.png" width="552" display="block" align="center" style="width: 552px;" class="fr-dib fr-fic">
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-clearfix u-footer u-grey-80" id="sec-a5c3"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="https://art3chautomation.github.io" class="u-image u-logo u-image-1" data-image-width="1080" data-image-height="1435" title="art3ch">
+          <img src="images/logo-Logosimboloblack.drawio.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <div class="u-align-left u-border-1 u-border-white u-expanded-width u-line u-line-horizontal u-opacity u-opacity-30 u-line-1"></div>
+        <div class="u-clearfix u-expanded-width u-gutter-30 u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-align-left u-container-style u-layout-cell u-left-cell u-size-20 u-layout-cell-1">
+                <div class="u-container-layout u-valign-top u-container-layout-1"><!--position-->
+                  <div data-position="" class="u-position"><!--block-->
+                    <div class="u-block">
+                      <div class="u-block-container u-clearfix"><!--block_header-->
+                        <h5 class="u-block-header u-text" data-lang-en="
+                Block header
+            " data-lang-es="
+                Block header
+            "><!--block_header_content--> Block header <!--/block_header_content--></h5><!--/block_header--><!--block_content-->
+                        <div class="u-block-content u-text"><!--block_content_content--> Block content. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices. <!--/block_content_content--></div><!--/block_content-->
+                      </div>
+                    </div><!--/block-->
+                  </div><!--/position-->
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-2">
+                <div class="u-container-layout u-valign-top u-container-layout-2"><!--position-->
+                  <div data-position="" class="u-position"><!--block-->
+                    <div class="u-block">
+                      <div class="u-block-container u-clearfix"><!--block_header-->
+                        <h5 class="u-block-header u-text" data-lang-en="
+                Block header
+            " data-lang-es="
+                Block header
+            "><!--block_header_content--> Block header <!--/block_header_content--></h5><!--/block_header--><!--block_content-->
+                        <div class="u-block-content u-text"><!--block_content_content--> Block content. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices. <!--/block_content_content--></div><!--/block_content-->
+                      </div>
+                    </div><!--/block-->
+                  </div><!--/position-->
+                </div>
+              </div>
+              <div class="u-align-left u-container-style u-layout-cell u-size-20 u-layout-cell-3">
+                <div class="u-container-layout u-valign-top u-container-layout-3"><!--position-->
+                  <div data-position="" class="u-position"><!--block-->
+                    <div class="u-block">
+                      <div class="u-block-container u-clearfix"><!--block_header-->
+                        <h5 class="u-block-header u-text" data-lang-en="
+                Block header
+            " data-lang-es="
+                Block header
+            "><!--block_header_content--> Block header <!--/block_header_content--></h5><!--/block_header--><!--block_content-->
+                        <div class="u-block-content u-text"><!--block_content_content--> Block content. Lorem ipsum dolor sit amet, consectetur adipiscing elit nullam nunc justo sagittis suscipit ultrices. <!--/block_content_content--></div><!--/block_content-->
+                      </div>
+                    </div><!--/block-->
+                  </div><!--/position-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <a class="u-link" href="https://nicepage.com/templates" target="_blank">
+        <span>Templates</span>
+      </a>
+      <p class="u-text">
+        <span>created with</span>
+      </p>
+      <a class="u-link" href="https://nicepage.com/html-website-builder" target="_blank">
+        <span>HTML Creator</span>
+      </a>. 
+    </section>
+  
+</body></html>
