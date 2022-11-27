@@ -40007,11 +40007,11 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         h2:not(.u-subtitle)
         {
-        font-weight: 400;
         font-size: 2.25rem;
         line-height: 1.1;
         margin-top: 20px;
         margin-bottom: 20px;
+        font-weight: 700;
         }
         h3
         {
@@ -40141,7 +40141,7 @@ a.u-link.u-text-hover-grey-90:hover {
         @media (max-width: 575px) {
         h2:not(.u-subtitle)
         {
-        font-size: 1.5rem;
+        font-size: 1.875rem;
         }
         }
         @media (max-width: 575px) {
@@ -40175,7 +40175,7 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         .u-xs h2:not(.u-subtitle)
         {
-        font-size: 1.5rem;
+        font-size: 1.875rem;
         }
         .u-xs h3
         {
