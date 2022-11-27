@@ -39956,6 +39956,11 @@ a.u-link.u-text-hover-grey-90:hover {
         
         
         
+        
+        
+        
+        
+        
         --theme-sheet-width-xl: 1140px;
         --theme-sheet-width-lg: 940px;
         --theme-sheet-width-md: 720px;
@@ -40050,6 +40055,11 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         margin-top: 20px;
         margin-bottom: 20px;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 2.2;
+        list-icon-spacing: 0.3;
+        list-icon-size: 0.8;
         }
         .u-btn
         {
@@ -40281,11 +40291,12 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-menu-1 {
-  margin: -40px 17px 22px auto;
+  margin: -38px 0 26px auto;
 }
 
 .u-header .u-nav-1 {
   font-size: 1rem;
+  letter-spacing: normal;
 }
 
 .u-header .u-nav-2 {
@@ -40318,15 +40329,15 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-header .u-text-1 {
     width: auto;
-    margin-top: -1px;
-    margin-right: 806px;
-    margin-left: 9px;
+    margin-top: -59px;
+    margin-right: 784px;
+    margin-left: 31px;
   }
 
   .u-header .u-menu-1 {
     width: auto;
-    margin-top: -95px;
-    margin-bottom: 60px;
+    margin-top: -36px;
+    margin-bottom: 31px;
   }
 }
 @media (max-width: 991px) {
@@ -40339,6 +40350,10 @@ a.u-link.u-text-hover-grey-90:hover {
     margin-right: 603px;
     margin-left: 0;
   }
+
+  .u-header .u-menu-1 {
+    margin-top: -36px;
+  }
 }
 @media (max-width: 767px) {
   .u-header .u-image-1 {
@@ -40346,7 +40361,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-text-1 {
-    margin-top: -1px;
+    margin-top: -59px;
     margin-right: 319px;
     margin-left: 89px;
   }

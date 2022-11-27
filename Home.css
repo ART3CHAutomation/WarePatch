@@ -83,26 +83,27 @@
   }
 
   .u-section-1 .u-text-1 {
-    margin-top: 115px;
+    margin-top: 120px;
     margin-right: auto;
-    margin-left: 0;
+    margin-left: 50px;
   }
 
   .u-section-1 .u-text-2 {
     width: auto;
     font-size: 2.75rem;
-    margin-top: 37px;
+    margin-top: 138px;
     margin-left: 210px;
   }
 
   .u-section-1 .u-text-3 {
     width: auto;
-    margin-top: 10px;
+    margin-top: 16px;
     margin-left: 0;
   }
 
   .u-section-1 .u-btn-6 {
-    margin-top: 60px;
+    margin-top: 16px;
+    margin-bottom: 50px;
   }
 }
 
@@ -116,16 +117,17 @@
   }
 
   .u-section-1 .u-text-2 {
-    margin-top: 54px;
+    font-size: 2.5rem;
+    margin-top: 146px;
     margin-left: 30px;
   }
 
   .u-section-1 .u-text-3 {
-    margin-top: 0;
+    margin-top: 14px;
   }
 
   .u-section-1 .u-btn-6 {
-    margin-top: 66px;
+    margin-top: 14px;
   }
 }
 
@@ -135,28 +137,29 @@
   }
 
   .u-section-1 .u-sheet-1 {
-    min-height: 587px;
+    min-height: 790px;
   }
 
   .u-section-1 .u-text-1 {
+    margin-top: 363px;
     margin-left: auto;
   }
 
   .u-section-1 .u-text-2 {
     font-size: 2.125rem;
-    margin-top: 40px;
+    margin-top: 17px;
     margin-left: 17px;
     margin-right: 17px;
   }
 
   .u-section-1 .u-text-3 {
-    margin-top: 45px;
+    margin-top: 17px;
   }
 
   .u-section-1 .u-btn-6 {
-    margin-top: 16px;
+    margin-top: 17px;
     margin-right: auto;
-    margin-bottom: 24px;
+    margin-bottom: 41px;
   }
 }.u-section-2 .u-sheet-1 {
   min-height: 623px;
@@ -611,10 +614,6 @@
 
 .u-section-3 .embed-responsive-1 {
   position: absolute;
-  width: 178%;
-  height: 178%;
-  left: -39%;
-  top: -39%;
 }
 
 @media (max-width: 1199px) {
@@ -635,10 +634,12 @@
 
 @media (max-width: 991px) {
   .u-section-3 .u-sheet-1 {
-    min-height: 406px;
+    min-height: 664px;
   }
 
   .u-section-3 .u-text-1 {
+    width: auto;
+    margin-top: 27px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -657,7 +658,6 @@
   .u-section-3 .u-text-1 {
     margin-left: auto;
     margin-right: auto;
-    width: 540px;
   }
 
   .u-section-3 .u-text-2 {
@@ -675,10 +675,6 @@
 @media (max-width: 575px) {
   .u-section-3 .u-sheet-1 {
     min-height: 579px;
-  }
-
-  .u-section-3 .u-text-1 {
-    width: 340px;
   }
 
   .u-section-3 .u-text-2 {
@@ -1207,8 +1203,8 @@
   height: 257px;
   object-position: 50% 60.72%;
   width: 257px;
-  background-image: url("images/08a3461f-6e0c-4b94-8524-b2fc1f0ce15b.jpg");
-  background-position: 100% 50%;
+  background-image: url("images/Danforlinkedin.jpeg");
+  background-position: 50% 50%;
   margin: 0 auto;
 }
 
@@ -1408,6 +1404,10 @@
     min-height: 427px;
   }
 
+  .u-section-5 .u-image-2 {
+    background-position: 100% 50%;
+  }
+
   .u-section-5 .u-layout-cell-3 {
     min-height: 427px;
   }
@@ -1448,8 +1448,8 @@
   }
 
   .u-section-5 .u-image-2 {
-    height: 187px;
-    width: 187px;
+    height: 220px;
+    width: 220px;
   }
 
   .u-section-5 .u-layout-cell-3 {
