@@ -1,0 +1,263 @@
+MODULE Module1
+
+    CONST robtarget Target_Home:=[[1022.453792063,0,1045],[0.5,0,0.866025404,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_Pick_MG:=[[3842.047,199.99,681.342],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_Pick_P:=[[3842.047893116,200.001,592.442],[0,1,0,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_Up_Pick:=[[3842.048,200.001,1200],[0,1,0,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget Target_Pallet4:=[[299.947465717,422.972185533,1183.781965556],[0.048655537,0.91126137,0.393080547,-0.112796443],[0,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget Target_10:=[[163.9,121.6,330],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_20:=[[350.9,121.6,330],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_30:=[[163.9,371.6,330],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_40:=[[350.9,371.6,330],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_50:=[[163.9,121.6,510],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_60:=[[350.9,121.6,510],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_70:=[[163.9,371.6,510],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_80:=[[350.9,371.6,510],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_90:=[[163.9,121.6,690],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_100:=[[350.9,121.6,690],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget targets_4{10}:= [Target_10, Target_20, Target_30, Target_40, Target_50, Target_60, Target_70, Target_80, Target_90, Target_100]; 
+    
+    
+    CONST robtarget Target_Pallet3:=[[186.212562813,288.194112026,1183.781965556],[0.101305487,0.561322459,0.818429409,-0.069480912],[1,-1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+   
+    CONST robtarget Target_31:=[[152.9,121.6,330],[0,1,0,0],[1,0,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_32:=[[346.9,121.6,330],[0,1,0,0],[1,0,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_33:=[[152.9,354.6,330],[0,1,0,0],[1,0,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_34:=[[344.9,354.6,330],[0,1,0,0],[1,0,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_35:=[[152.9,121.6,510],[0,1,0,0],[1,0,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_39:=[[152.9,121.6,690],[0,1,0,0],[1,0,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_36:=[[346.9,121.6,510],[0,1,0,0],[1,0,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_310:=[[346.9,121.6,690],[0,1,0,0],[1,0,1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_37:=[[152.9,354.6,510],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_38:=[[344.9,354.6,510],[0,1,0,0],[0,0,0,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+     
+    CONST robtarget targets_3{10}:= [Target_31, Target_32, Target_33, Target_34, Target_35, Target_36, Target_37, Target_38, Target_39, Target_310]; 
+    
+
+CONST robtarget Target_Pallet1:=[[338.266823032,110.469048674,1183.782027806],[0.052992829,-0.895334825,0.428118154,0.110824896],[-1,-1,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+  
+    CONST robtarget Target_11:=[[138.9,367.6,330],[0,1,0,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_12:=[[330.9,367.6,330],[0,1,0,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_13:=[[138.9,141.6,330],[0,1,0,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_14:=[[330.9,141.6,330],[0,1,0,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_15:=[[138.9,367.6,510],[0,1,0,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_16:=[[330.9,367.6,510],[0,1,0,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_17:=[[138.9,141.6,510],[0,1,0,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_18:=[[330.9,141.6,510],[0,1,0,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_19:=[[138.9,367.6,690],[0,1,0,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_110:=[[330.9,367.6,690],[0,1,0,0],[-1,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget targets_1{10}:= [Target_11, Target_12, Target_13, Target_14, Target_15, Target_16, Target_17, Target_18, Target_19, Target_110]; 
+   
+    
+    CONST robtarget Target_Pallet2:=[[381.217142796,94.120020996,1183.781965556],[0.111831738,-0.410677208,0.903467671,0.050833661],[-2,0,-1,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+
+    CONST robtarget Target_21:=[[168.9,371.6,330],[0,1,0,0],[-2,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_22:=[[360.9,371.6,330],[0,1,0,0],[-2,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_23:=[[168.9,141.6,330],[0,1,0,0],[-2,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_24:=[[360.9,141.6,330],[0,1,0,0],[-2,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_25:=[[168.9,371.6,510],[0,1,0,0],[-2,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_26:=[[360.9,371.6,510],[0,1,0,0],[-2,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_27:=[[168.9,141.6,510],[0,1,0,0],[-2,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_28:=[[360.9,141.6,510],[0,1,0,0],[-2,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_29:=[[168.9,371.6,690],[0,1,0,0],[-2,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    CONST robtarget Target_210:=[[360.9,371.6,690],[0,1,0,0],[-2,0,-2,0],[9E+09,9E+09,9E+09,9E+09,9E+09,9E+09]];
+    
+    CONST robtarget targets_2{10}:= [Target_21, Target_22, Target_23, Target_24, Target_25, Target_26, Target_27, Target_28, Target_29, Target_210]; 
+  
+VAR num total := 0;     
+VAR num a:=0;
+VAR num p1:= 0;
+VAR num p2:= 0;
+VAR num p3:= 0;
+VAR num p4:= 0;
+VAR num off_pq:=-69;
+VAR num offset := 0;
+VAR bool pick:= TRUE;
+VAR bool place:= FALSE;
+
+    PROC main()       
+
+        MoveL Target_Up_Pick,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Banda;
+        WHILE TRUE DO               
+            IF pick = TRUE THEN
+                WaitTime(1);
+                IF DI_Inf=1 AND DI_Sup=1 AND DI_Mit=1 THEN ! Caja G
+                    pick := FALSE;
+                    Path_Pick(Target_Pick_MG);
+                    a := 2;
+                    offset := 0;
+                    place := TRUE; 
+                ELSEIF DI_Inf=1 AND DI_Sup=1 AND DI_Mit=0 THEN ! Caja M
+                    pick := FALSE;
+                    Path_Pick(Target_Pick_MG);   
+                    a := 1;
+                    offset := 10;
+                    place := TRUE;
+                ELSEIF DI_Inf=1 AND DI_Sup=0 AND DI_Mit=0 THEN ! Caja P
+                    pick := FALSE;
+                    Path_Pick(Target_Pick_P);    
+                    a := 1;
+                    offset := off_pq;
+                    place := TRUE;
+                ENDIF
+            ELSEIF place = TRUE THEN
+                IF DI_Pallet1 = 1 THEN
+                    pick := TRUE;
+                    p1 := p1 + a;
+                    Path_Place_Pallet1(targets_1{p1}), offset;
+                    place := FALSE;
+                    total := total + 1;
+                ELSEIF DI_Pallet2 = 1 THEN
+                    pick := TRUE;
+                    p2 := p2 + a;
+                    Path_Place_Pallet2(targets_2{p2}), offset;
+                    place := FALSE;
+                    total := total + 1;
+                ELSEIF DI_Pallet3 = 1 THEN
+                    pick := TRUE;
+                    p3 := p3 + a;
+                    Path_Place_Pallet3(targets_3{p3}), offset;
+                    place := FALSE;
+                    total := total + 1;
+                ELSEIF DI_Pallet4 = 1 THEN
+                    pick := TRUE;
+                    p4 := p4 + a;
+                    Path_Place_Pallet4(targets_4{p4}), offset;
+                    place := FALSE;
+                    total := total + 1;
+                ENDIF
+            ENDIF
+            IF total = 20 THEN
+                WaitTime 1;
+                SetDO DO_Move_Boxes, 1;
+                WaitTime 1;
+                SetDO DO_Move_Boxes, 0;
+                total := 0;     
+                a:=0;
+                p1:= 0;
+                p2:= 0;
+                p3:= 0;
+                p4:= 0;
+                off_pq:=-69;
+                offset := 0;
+                pick:= TRUE;
+                place:= FALSE;                 
+            ENDIF
+            
+        ENDWHILE
+    ENDPROC
+    
+    
+    PROC Path_Pick(robtarget target_pick)
+        MoveL target_pick,v6000,fine,TCP_Gripper_Tool\WObj:=WO_Banda;
+        SETDO DO_Gripper, 1;
+        WaitTime 1;
+        MoveL Target_Up_Pick,v6000,z100,TCP_Gripper_Tool\WObj:=WO_Banda;
+    ENDPROC
+    
+    PROC Path_Place_Pallet4(robtarget current_target, num offset)
+        MoveL Target_Pallet4,v7000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet4;
+        MoveL offs(current_target, 0, 0,  200),v6000,fine,TCP_Gripper_Tool\WObj:=WO_Pallet4;
+        MoveL offs(current_target, 0, 0,  offset),v6000,fine,TCP_Gripper_Tool\WObj:=WO_Pallet4;
+        
+        WaitTime 1;
+        SetDO DO_Gripper, 0;
+        MoveL offs(current_target, 0, 0,  200),v6000,fine,TCP_Gripper_Tool\WObj:=WO_Pallet4;
+        MoveL Target_Pallet4,v7000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet4;
+        MoveL Target_Up_Pick,v7000,z100,TCP_Gripper_Tool\WObj:=WO_Banda;
+    ENDPROC
+    
+    PROC Path_Place_Pallet3(robtarget current_target, num offset)
+        MoveL Target_Pallet3,v7000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL offs(current_target, 0, 0,  200),v6000,fine,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL offs(current_target, 0, 0,  offset),v6000,fine,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        
+        WaitTime 1;
+        SetDO DO_Gripper, 0;
+        MoveL offs(current_target, 0, 0,  200),v6000,fine,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_Pallet3,v7000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_Up_Pick,v7000,z100,TCP_Gripper_Tool\WObj:=WO_Banda;
+    ENDPROC
+    
+    PROC Path_Place_Pallet1(robtarget current_target, num offset)
+        MoveL Target_Pallet1,v7000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL offs(current_target, 0, 0,  200),v6000,fine,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL offs(current_target, 0, 0,  offset),v6000,fine,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        
+        WaitTime 1;
+        SetDO DO_Gripper, 0;
+        MoveL offs(current_target, 0, 0,  200),v6000,fine,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_Pallet1,v7000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_Up_Pick,v7000,z100,TCP_Gripper_Tool\WObj:=WO_Banda;
+    ENDPROC
+    
+    PROC Path_Place_Pallet2(robtarget current_target, num offset)
+        MoveL Target_Pallet2,v7000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL offs(current_target, 0, 0,  200),v6000,fine,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL offs(current_target, 0, 0,  offset),v6000,fine,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+       
+        WaitTime 1;
+        SetDO DO_Gripper, 0;
+        MoveL offs(current_target, 0, 0,  200),v6000,fine,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL Target_Pallet2,v7000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL Target_Up_Pick,v7000,z100,TCP_Gripper_Tool\WObj:=WO_Banda;
+    ENDPROC
+    
+    
+    PROC Path_Targets_In()
+        MoveL Target_Home,v2000,z100,TCP_Gripper_Tool\WObj:=wobj0;
+        MoveL Target_Pick_MG,v2000,z100,TCP_Gripper_Tool\WObj:=WO_Banda;
+        MoveL Target_Pick_P,v2000,z100,TCP_Gripper_Tool\WObj:=WO_Banda;
+        MoveL Target_Up_Pick,v2000,z100,TCP_Gripper_Tool\WObj:=WO_Banda;
+        MoveL Target_Pallet4,v2000,z100,TCP_Gripper_Tool\WObj:=Wo_Pallet4;
+        MoveL Target_10,v2000,z100,TCP_Gripper_Tool\WObj:=Wo_Pallet4;
+        MoveL Target_20,v2000,z100,TCP_Gripper_Tool\WObj:=Wo_Pallet4;
+        MoveL Target_30,v2000,z100,TCP_Gripper_Tool\WObj:=Wo_Pallet4;
+        MoveL Target_40,v2000,z100,TCP_Gripper_Tool\WObj:=Wo_Pallet4;
+        MoveL Target_50,v2000,z100,TCP_Gripper_Tool\WObj:=Wo_Pallet4;
+        MoveL Target_60,v2000,z100,TCP_Gripper_Tool\WObj:=Wo_Pallet4;
+        MoveL Target_70,v2000,z100,TCP_Gripper_Tool\WObj:=Wo_Pallet4;
+        MoveL Target_80,v2000,z100,TCP_Gripper_Tool\WObj:=Wo_Pallet4;
+        MoveL Target_90,v2000,z100,TCP_Gripper_Tool\WObj:=Wo_Pallet4;
+        MoveL Target_100,v1000,z100,TCP_Gripper_Tool\WObj:=Wo_Pallet4;
+        MoveL Target_Pallet4,v1000,z100,TCP_Gripper_Tool\WObj:=Wo_Pallet4;
+        MoveL Target_Up_Pick,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Banda;
+        MoveL Target_31,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_32,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_33,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_34,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_35,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_39,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_36,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_310,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_37,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_38,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_Pallet3,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet3;
+        MoveL Target_11,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_12,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_13,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_14,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_15,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_16,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_17,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_18,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_19,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_110,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_Pallet1,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet1;
+        MoveL Target_21,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL Target_22,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL Target_23,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL Target_24,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL Target_25,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL Target_26,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL Target_27,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL Target_28,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL Target_29,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL Target_210,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+        MoveL Target_Pallet2,v1000,z100,TCP_Gripper_Tool\WObj:=WO_Pallet2;
+    ENDPROC
+ENDMODULE

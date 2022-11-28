@@ -1,8 +1,0 @@
-MODULE CalibData
-    PERS tooldata TCP_Gripper_Tool:=[TRUE,[[0,0,138],[1,0,0,0]],[1,[-0.035,-0.064,63.659],[1,0,0,0],0,0,0]];
-    TASK PERS wobjdata WO_Pallet1:=[FALSE,TRUE,"",[[750,-400,160],[0,0,0,1]],[[0,0,0],[1,0,0,0]]];
-    TASK PERS wobjdata WO_Banda:=[FALSE,TRUE,"",[[4536.389893116,200,0],[0,0,0,1]],[[0,0,0],[1,0,0,0]]];
-    TASK PERS wobjdata WO_Pallet2:=[FALSE,TRUE,"",[[-50,-400,160],[0,0,0,1]],[[0,0,0],[1,0,0,0]]];
-    TASK PERS wobjdata WO_Pallet3:=[FALSE,TRUE,"",[[-50,900,160],[0,0,0,1]],[[0,0,0],[1,0,0,0]]];
-    TASK PERS wobjdata Wo_Pallet4:=[FALSE,TRUE,"",[[750,900,160],[0,0,0,1]],[[0,0,0],[1,0,0,0]]];
-ENDMODULE
